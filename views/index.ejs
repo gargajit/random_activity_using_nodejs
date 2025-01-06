@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Try an Activity</title>
+</head>
+<body>
+    <h1>Activity of the day</h1>
+    <% if (locals.activity) {%>
+        <p>
+            <span class="activityName"><%= activity.activity %></span> <br>
+            <% if (activity.participants === 1) { %>
+                This activity requires <span class="styleParticipants"><%= activity.participants %> participant</span> to complete it. 
+            <% } else { %>
+                This activity requires <span class="styleParticipants"><%= activity.participants %> participants</span> to complete it.
+            <% } %>
+            <br>
+            <% if (locals.activity.link === '') { %>
+                Bring up your creativity and finish the activity.
+            <% } else { %>
+                Follow the link: <a href="<%= activity.link%>"><%= activity.link%></a>
+            <% } %>
+        </p>
+    <% } else { %>
+        <p>No activity for today.</p>
+    <% } %>
+
+    
+</body>
+</html>

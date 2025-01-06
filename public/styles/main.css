@@ -1,0 +1,25 @@
+body {
+    background-color: #e9e0e0;
+    font-family: cursive;
+}
+
+h1 {
+    color: tomato;
+}
+
+p {
+    font-size: large;
+    line-height: 2rem;
+}
+
+.activityName {
+    font-size: 1.6rem;
+    background-color: #e99384;
+    color: white;
+    padding: 0 5px;
+
+}
+
+.styleParticipants {
+    color: tomato;
+}
