@@ -28,4 +28,9 @@ res.render("index.ejs", {activity: result});
 We render the data as the dynamic content in the ejs file.
 
 ### Example
+- When there is a link provided in the response:
 ![image](https://github.com/user-attachments/assets/9df83a9f-0b34-4852-bae8-689fbe181d08)
+
+- When the activity is such that there is no link required:
+![image](https://github.com/user-attachments/assets/de406750-06eb-4b16-8564-7c9d176dcfce)
+
