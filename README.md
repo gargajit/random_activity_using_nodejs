@@ -19,7 +19,7 @@ response.on("data", (chunk) => {
 });
 ```
 
-Once we recieve the "end" message from our request, the JSON data is parsed and sent to the EJS file `index.ejs`
+Once we recieve the "end" message from our request, the *JSON data* is parsed into *JS Object* and sent to the EJS file `index.ejs`
 ```javascript
 const result = JSON.parse(data);
 res.render("index.ejs", {activity: result});
